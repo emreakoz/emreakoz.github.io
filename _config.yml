@@ -16,7 +16,7 @@
 title: Emre Akoz
 email: akozemr@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-Emre's Homepage
+  Emre's Homepage
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  emreakoz
