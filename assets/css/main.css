@@ -3869,9 +3869,18 @@
 /* Footer */
 
 	#footer {
-		padding: 6rem 0 4rem 0 ;
-		background: #f2f2f2;
+		padding: 4rem 0 2rem 0 ;
+		background: #000;
+		text-align: center;
 	}
+
+		#footer a {
+			color: rgba(255, 255, 255, 0.5);
+		}
+
+			#footer a:hover {
+				color: #FFF;
+			}
 
 		#footer .copyright {
 			color: #bbb;
@@ -3887,6 +3896,25 @@
 				padding: 3rem 0 1rem 0 ;
 			}
 
+		}
+
+		/* Emre added stuff below 4/14/2019 to improve mobile compatibility */
+		@media screen and (max-width: 600px) {
+			.wrapper.style3 .box .content p {
+				font-size: 0.8rem;
+			}
+
+			.wrapper.style3 .box .content ul li {
+				font-size: 0.8rem;
+			}
+
+			.wrapper.style3 .box .content h2 {
+				font-size: 1.25rem;
+			}
+
+			.wrapper.style3 h1 {
+				font-size: 2rem;
+			}
 		}
 
 /* Flexgrid */
