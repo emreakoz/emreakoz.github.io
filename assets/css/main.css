@@ -2658,24 +2658,34 @@
 			width: 80rem;
 		}
 
-		.wrapper.style1 {
-			background-color: #5AA6ED;
-			color: #d6e9fb;
+				.wrapper.style1 {
+			background-color: #000;
+			color: #bfbfbf;
+			background-image: url(../../images/bg.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			position: relative;
 		}
 
-			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
+			.wrapper.style1 input, .wrapper.style3 select, .wrapper.style3 textarea {
 				color: #ffffff;
 			}
 
-			.wrapper.style1 a {
+			/* LFS added two below on 12/18/2018, to change links in .wrapper.style3 content */
+			.wrapper.style1 a:link, .wrapper.style3 a:visited {
+				color: rgba(255, 255, 255, 0.9)
+			}
+
+			.wrapper.style1 a:hover {
+				color: rgba(255, 255, 255, 0.6);
+			}
+
+			.wrapper.style1 strong, .wrapper.style3 b {
 				color: #ffffff;
 			}
 
-			.wrapper.style1 strong, .wrapper.style1 b {
-				color: #ffffff;
-			}
-
-			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
+			.wrapper.style1 h1, .wrapper.style3 h2, .wrapper.style3 h3, .wrapper.style3 h4, .wrapper.style3 h5, .wrapper.style3 h6 {
 				color: #ffffff;
 			}
 
@@ -2685,7 +2695,7 @@
 
 			.wrapper.style1 code {
 				background: rgba(255, 255, 255, 0.075);
-				border-color: rgba(255, 255, 255, 0.25);
+				border-color: rgba(255, 255, 255, 0.25); /* Added by LFS 10/28/2018 */
 			}
 
 			.wrapper.style1 hr {
@@ -2693,8 +2703,50 @@
 			}
 
 			.wrapper.style1 .box {
-				border-color: rgba(255, 255, 255, 0.25);
+				background-color: rgba(60, 60, 60, 0.9);
+				border-color: rgba(255, 255, 255, 0.4);
 			}
+
+			/* Added by LFS 10/28/2018 -- turn links in box headers light gray. */
+			.wrapper.style1 .box .content header h2 a {
+				color: #f2f2f2;
+			}
+
+			/* Added by LFS 10/29/2018 -- dealing with links near the top of the portfolio pages */
+
+			.wrapper.style1 .inner .linkBack a:link, .wrapper.style3 .inner .linkBack a:visited {
+				color: rgba(255, 255, 255, 0.35);
+			}
+
+			.wrapper.style1 .inner .linkBack a:hover {
+				color: #ffffff
+			}
+
+			/* Added by LFS 12/18/2018 -- dealing with Portfolio page links */
+
+			.wrapper.style1 .inner .portfolioLink a:link, .wrapper.style3 .inner .portfolioLink a:visited {
+				color: rgba(255, 255, 255, 1)
+			}
+
+			.wrapper.style1 .inner .portfolioLink a:hover {
+				color: rgba(255, 255, 255, 0.6);
+			}
+
+			/* Added by LFS 12/18/2018 -- dealing with in-box list item text color */
+
+			.wrapper.style1 .box .content ul li {
+				color: #f2f2f2;
+				font-size: 1.06rem;
+			}
+
+			.wrapper.style1 .box .content p {
+				color: #f2f2f2;
+				font-size: 1.06rem;
+			}
+
+
+			/* End of stuff added by LFS 10/29/2018 */
+
 
 			.wrapper.style1 input[type="submit"],
 			.wrapper.style1 input[type="reset"],
@@ -2752,7 +2804,7 @@
 					.wrapper.style1 input[type="button"].alt.icon:before,
 					.wrapper.style1 button.alt.icon:before,
 					.wrapper.style1 .button.alt.icon:before {
-						color: #bddbf8;
+						color: #999999;
 					}
 
 				.wrapper.style1 input[type="submit"].special,
@@ -2760,9 +2812,25 @@
 				.wrapper.style1 input[type="button"].special,
 				.wrapper.style1 button.special,
 				.wrapper.style1 .button.special {
-					background-color: #ffffff;
-					color: #5AA6ED !important;
+					background-color: #8a4680;
+					color: #ffffff !important;
 				}
+
+					.wrapper.style1 input[type="submit"].special:hover,
+					.wrapper.style1 input[type="reset"].special:hover,
+					.wrapper.style1 input[type="button"].special:hover,
+					.wrapper.style1 button.special:hover,
+					.wrapper.style1 .button.special:hover {
+						background-color: #9b4f90;
+					}
+
+					.wrapper.style1 input[type="submit"].special:active,
+					.wrapper.style1 input[type="reset"].special:active,
+					.wrapper.style1 input[type="button"].special:active,
+					.wrapper.style1 button.special:active,
+					.wrapper.style1 .button.special:active {
+						background-color: #793d70;
+					}
 
 			.wrapper.style1 label {
 				color: #ffffff;
@@ -2782,8 +2850,8 @@
 				.wrapper.style1 input[type="email"]:focus,
 				.wrapper.style1 select:focus,
 				.wrapper.style1 textarea:focus {
-					border-color: #ffffff;
-					box-shadow: 0 0 0 1px #ffffff;
+					border-color: #8a4680;
+					box-shadow: 0 0 0 1px #8a4680;
 				}
 
 			.wrapper.style1 .select-wrapper:before {
@@ -2792,7 +2860,7 @@
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #d6e9fb;
+				color: #bfbfbf;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -2803,35 +2871,35 @@
 
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
-				background-color: #ffffff;
-				border-color: #ffffff;
-				color: #5AA6ED;
+				background-color: #8a4680;
+				border-color: #8a4680;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 input[type="checkbox"]:focus + label:before,
 			.wrapper.style1 input[type="radio"]:focus + label:before {
-				border-color: #ffffff;
-				box-shadow: 0 0 0 1px #ffffff;
+				border-color: #8a4680;
+				box-shadow: 0 0 0 1px #8a4680;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #bddbf8 !important;
+				color: #999999 !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #bddbf8 !important;
+				color: #999999 !important;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #bddbf8 !important;
+				color: #999999 !important;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #bddbf8 !important;
+				color: #999999 !important;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #bddbf8 !important;
+				color: #999999 !important;
 			}
 
 			.wrapper.style1 ul.alt li {
@@ -2839,7 +2907,7 @@
 			}
 
 			.wrapper.style1 header p {
-				color: #bddbf8;
+				color: #dadada;
 			}
 
 			.wrapper.style1 table tbody tr {
@@ -2865,6 +2933,89 @@
 			.wrapper.style1 table.alt tbody tr td {
 				border-color: rgba(255, 255, 255, 0.25);
 			}
+
+			.wrapper.style1 .inner {
+				position: relative;
+				z-index: 2;
+			}
+
+			.wrapper.style1 p {
+				/*text-transform: uppercase;*/
+				color: rgba(255, 255, 255, 0.9); /* LFS 10/28/2018 added this property*/
+				font-size: 1.1rem;
+				font-weight: 300;
+				margin: 0 0 .5rem 0;
+				padding: 0 0 1rem 0;
+				letter-spacing: 0;
+			}
+				/* Commented by LFS 10/28/2018: Don't want lines after paragraphs
+				.wrapper.style3 p:after {
+					content: '';
+					position: absolute;
+					margin: auto;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					width: 50%;
+					height: 1px;
+					background-color: rgba(255, 255, 255, 0.5);
+				}
+				*/
+
+			.wrapper.style1:before {
+				-moz-transition: opacity 3s ease;
+				-webkit-transition: opacity 3s ease;
+				-ms-transition: opacity 3s ease;
+				transition: opacity 3s ease;
+				-moz-transition-delay: 1.25s;
+				-webkit-transition-delay: 1.25s;
+				-ms-transition-delay: 1.25s;
+				transition-delay: 1.25s;
+				content: '';
+				display: block;
+				background-color: rgba(0, 0, 0, 0.95);
+				height: 100%;
+				left: 0;
+				opacity: 0.85; /* LFS 10/28/2018 changed from 0.75 */
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+			}
+
+		@media screen and (max-width: 1280px) {
+
+			.wrapper > .inner {
+				width: 95%; /* LFS 10/28/2018 changed from 75rem to 95% */
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.wrapper > .inner {
+				width: 90%;
+			}
+	
+			.wrapper.style1 {
+				background-attachment: fixed;  /*LFS changed from scroll to fixed 12/18/2018 */
+			}
+			
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.wrapper {
+				padding: 3rem 0 1rem 0 ;
+			}
+
+			/* Lucien added this for mobile compatibility. 12/19/2018 */
+			.wrapper.style1 {
+				background-image: none;
+				background-attachment: scroll;
+			}
+
+		}
 
 		.wrapper.style2 {
 			background-color: #f2f2f2;
@@ -3905,20 +4056,20 @@
 
 		/* Emre added stuff below 4/14/2019 to improve mobile compatibility */
 		@media screen and (max-width: 600px) {
-			.wrapper.style3 .box .content p {
+			.wrapper.style1 .box .content p {
 				font-size: 0.8rem;
 			}
 
-			.wrapper.style3 .box .content ul li {
+			.wrapper.style1 .box .content ul li {
 				font-size: 0.8rem;
 			}
 
-			.wrapper.style3 .box .content h2 {
+			.wrapper.style1 .box .content h2 {
 				font-size: 1.25rem;
 			}
 
-			.wrapper.style3 h1 {
-				font-size: 10rem; #font size is changed by Emre at 4/14/2019
+			.wrapper.style1 h1 {
+				font-size: 2rem; #font size is changed by Emre at 4/14/2019
 			}
 		}
 
