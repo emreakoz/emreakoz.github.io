@@ -2658,7 +2658,7 @@
 			width: 80rem;
 		}
 
-				.wrapper.style1 {
+				/*.wrapper.style1 {
 			background-color: #000;
 			color: #bfbfbf;
 			background-image: url(../../images/trout_movie.png);
@@ -2666,7 +2666,7 @@
 			background-attachment: fixed;
 			background-position: center;
 			position: relative;
-		}
+		}*/
 
 			.wrapper.style1 input, .wrapper.style3 select, .wrapper.style3 textarea {
 				color: #ffffff;
