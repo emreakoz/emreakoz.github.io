@@ -1,1 +1,0 @@
-# emreakoz.github.io
