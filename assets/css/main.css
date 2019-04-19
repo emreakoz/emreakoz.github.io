@@ -2672,7 +2672,6 @@
 				color: #ffffff;
 			}
 
-			/* LFS added two below on 12/18/2018, to change links in .wrapper.style3 content */
 			.wrapper.style1 a:link, .wrapper.style3 a:visited {
 				color: rgba(255, 255, 255, 0.9)
 			}
@@ -2695,7 +2694,7 @@
 
 			.wrapper.style1 code {
 				background: rgba(255, 255, 255, 0.075);
-				border-color: rgba(255, 255, 255, 0.25); /* Added by LFS 10/28/2018 */
+				border-color: rgba(255, 255, 255, 0.25);
 			}
 
 			.wrapper.style1 hr {
@@ -2707,12 +2706,9 @@
 				border-color: rgba(255, 255, 255, 0.4);
 			}
 
-			/* Added by LFS 10/28/2018 -- turn links in box headers light gray. */
 			.wrapper.style1 .box .content header h2 a {
 				color: #f2f2f2;
 			}
-
-			/* Added by LFS 10/29/2018 -- dealing with links near the top of the portfolio pages */
 
 			.wrapper.style1 .inner .linkBack a:link, .wrapper.style3 .inner .linkBack a:visited {
 				color: rgba(255, 255, 255, 0.35);
@@ -2722,8 +2718,6 @@
 				color: #ffffff
 			}
 
-			/* Added by LFS 12/18/2018 -- dealing with Portfolio page links */
-
 			.wrapper.style1 .inner .portfolioLink a:link, .wrapper.style3 .inner .portfolioLink a:visited {
 				color: rgba(255, 255, 255, 1)
 			}
@@ -2731,8 +2725,6 @@
 			.wrapper.style1 .inner .portfolioLink a:hover {
 				color: rgba(255, 255, 255, 0.6);
 			}
-
-			/* Added by LFS 12/18/2018 -- dealing with in-box list item text color */
 
 			.wrapper.style1 .box .content ul li {
 				color: #f2f2f2;
@@ -2743,9 +2735,6 @@
 				color: #f2f2f2;
 				font-size: 1.06rem;
 			}
-
-
-			/* End of stuff added by LFS 10/29/2018 */
 
 
 			.wrapper.style1 input[type="submit"],
@@ -2941,25 +2930,13 @@
 
 			.wrapper.style1 p {
 				/*text-transform: uppercase;*/
-				color: rgba(255, 255, 255, 0.9); /* LFS 10/28/2018 added this property*/
+				color: rgba(255, 255, 255, 0.9);
 				font-size: 1.1rem;
 				font-weight: 300;
 				margin: 0 0 .5rem 0;
 				padding: 0 0 1rem 0;
 				letter-spacing: 0;
 			}
-				/* Commented by LFS 10/28/2018: Don't want lines after paragraphs
-				.wrapper.style3 p:after {
-					content: '';
-					position: absolute;
-					margin: auto;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					width: 50%;
-					height: 1px;
-					background-color: rgba(255, 255, 255, 0.5);
-				}
 				*/
 
 			.wrapper.style1:before {
@@ -2976,7 +2953,7 @@
 				background-color: rgba(0, 0, 0, 0.95);
 				height: 100%;
 				left: 0;
-				opacity: 0.85; /* LFS 10/28/2018 changed from 0.75 */
+				opacity: 0.85;
 				position: absolute;
 				top: 0;
 				width: 100%;
@@ -2986,7 +2963,7 @@
 		@media screen and (max-width: 1280px) {
 
 			.wrapper > .inner {
-				width: 95%; /* LFS 10/28/2018 changed from 75rem to 95% */
+				width: 95%;
 			}
 
 		}
@@ -2998,7 +2975,7 @@
 			}
 	
 			.wrapper.style1 {
-				background-attachment: fixed;  /*LFS changed from scroll to fixed 12/18/2018 */
+				background-attachment: fixed;
 			}
 			
 		}
@@ -3009,7 +2986,6 @@
 				padding: 3rem 0 1rem 0 ;
 			}
 
-			/* Lucien added this for mobile compatibility. 12/19/2018 */
 			.wrapper.style1 {
 				background-image: none;
 				background-attachment: scroll;
@@ -3613,7 +3589,7 @@
 			color: inherit;
 			text-decoration: none;
 			color: #FFF;
-			font-size: 1.5em; /* Added by LFS 10/28/2018. Changes size of Menu icon */
+			font-size: 1.5em;
 		}
 
 			#header > a:hover {
